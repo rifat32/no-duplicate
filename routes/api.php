@@ -28,3 +28,6 @@ Route::middleware(['auth:api'])->group(function () {
     Route::delete('/duplicates/{id}', [LogicController::class,'deleteDuplicate']);
     Route::post('duplicate-counts', [LogicController::class, 'duplicateCount']);
 });
+Route::get('/duplicatess', function() {
+    return 'aaaa';
+});
